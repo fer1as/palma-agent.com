@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max — Sabes lo que hay que hacer. Max se encarga.</title>
+  <link rel="icon" type="image/png" href="/img/max-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0A0B0E;
+      --white: #F5F3EE;
+      --accent: #1A5A99;
+      --accent-light: #256DB5;
+      --accent-dim: rgba(26, 90, 153, 0.08);
+      --accent-glow: rgba(26, 90, 153, 0.25);
+      --accent-dark: #0D3B6B;
+      --green: #2EC4B6;
+      --gray: #9A9A9A;
+      --card-bg: rgba(255,255,255,0.03);
+      --card-border: rgba(255,255,255,0.06);
+      --radius: 16px;
+      --max-w: 1100px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--white); font-family: var(--font); line-height: 1.6; overflow-x: hidden; }
+
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    h1, h2, h3 { font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2rem, 6vw, 3.6rem); }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); margin-bottom: 20px; }
+    h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    p { font-size: 1.05rem; color: var(--gray); margin-bottom: 14px; }
+
+    section { padding: 80px 0; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .hero-top {
+      background: var(--white);
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .hero-top .tag {
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 0 60px;
+      background: linear-gradient(180deg, var(--accent-light) 0%, var(--accent) 40%, var(--accent-dark) 70%, var(--bg) 100%);
+    }
+    .hero h1 + p { margin-top: 40px; }
+    .hero p { font-size: 1.15rem; max-width: 620px; margin: 0 auto 24px; }
+    .hero h1 { color: var(--white); }
+    .hero h1 + p { color: rgba(245,243,238,0.9); }
+
+    .btn-link img {
+      display: inline-block;
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      border-radius: 50px;
+      transition: transform 0.15s, box-shadow 0.2s;
+      filter: drop-shadow(0 4px 12px rgba(26, 90, 153, 0.3));
+    }
+    .btn-link:hover img {
+      transform: translateY(-2px);
+      filter: drop-shadow(0 8px 24px rgba(26, 90, 153, 0.5));
+    }
+
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 32px;
+    }
+    @media (max-width: 700px) { .feat-grid { grid-template-columns: 1fr; } }
+    .feat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .feat-card:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+    .feat-card .icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 52px; height: 52px; border-radius: 50%;
+      font-size: 1.5rem; font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .feat-card .icon.c1 { color: var(--accent); background: rgba(26,90,153,0.1); }
+    .feat-card .icon.c2 { color: var(--green); background: rgba(46,196,182,0.1); }
+    .feat-card .icon.c3 { color: #AADBC7; background: rgba(170,219,199,0.1); }
+    .feat-card .icon.c4 { color: #F5C518; background: rgba(245,197,24,0.1); }
+    .feat-card h3 { color: var(--white); }
+    .feat-card p { font-size: 0.92rem; margin-bottom: 0; }
+
+    .example-chat {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      max-width: 680px;
+      margin: 24px auto 0;
+      font-size: 0.95rem;
+    }
+    .msg { margin-bottom: 14px; }
+    .msg:last-child { margin-bottom: 0; }
+    .msg .who { font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em; margin-bottom: 3px; }
+    .msg.user .who { color: var(--green); }
+    .msg.max .who { color: var(--accent); }
+    .msg p { font-size: 0.95rem; margin-bottom: 0; }
+
+    .target-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+    @media (max-width: 700px) { .target-grid { grid-template-columns: 1fr; } }
+
+    .cta-section {
+      text-align: center;
+      padding: 60px 0 40px;
+      background: linear-gradient(180deg, var(--accent-dim) 0%, var(--bg) 100%);
+    }
+    .cta-section .tag { color: var(--green); }
+    .cta-section p { max-width: 480px; margin: 0 auto 24px; }
+    .cta-foot { font-size: 0.85rem; color: var(--gray); margin-top: 24px; display: block; }
+
+    .bg-light {
+      background: var(--accent-dim);
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 32px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--gray);
+    }
+    footer strong { color: var(--white); }
+    footer a { color: var(--gray); margin: 0 8px; }
+    footer a:hover { color: var(--white); }
+
+    @media (max-width: 600px) {
+      section { padding: 50px 0; }
+      .hero { min-height: auto; padding: 90px 0 50px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="main-content">
+
+  <section class="hero-top">
+    <div class="wrap">
+      <img src="/img/max-logo.png" alt="MAX" style="max-width:280px; width:100%; height:auto; display:block; margin:0 auto 20px;">
+      <p class="tag">Sabes lo que hay que hacer. Max se encarga.</p>
+    </div>
+  </section>
+
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <h1>Le pides lo que necesitas y él lo hace.</h1>
+      <p>
+        Max es tu asistente ejecutor. 
+        Le dices qué necesitas y él se pone a trabajar: documentos, correos, stock,
+        atención al cliente, automatizaciones. Pregunta lo que necesita y hace su trabajo, ejecuta, entrega. Sin vueltas.
+      </p>
+      <div class="hero-diff" style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:30px;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <span style="font-size:0.85rem; color:var(--gray);">¿Tienes una tarea?</span>
+          <span style="font-size:1.2rem; font-weight:700; color:var(--white);">Se la das a Max.</span>
+        </div>
+        <div style="font-size:1.5rem; color:var(--white); display:flex; align-items:center;">→</div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <span style="font-size:0.85rem; color:var(--gray);">¿Qué consigues?</span>
+          <span style="font-size:1.2rem; font-weight:700; color:var(--white);">Tiempo libre.</span>
+        </div>
+      </div>
+      <a href="https://chat.palma-agent.com/?guest=1&amp;service=max&amp;origen=max-boton-1" class="btn-link" style="display:inline-block; margin-top:32px;"><img src="/img/max-btn.png" alt="Acceder a Max"></a>
+      <p class="cta-foot" style="margin-top:24px; color:var(--green);">
+        Versión Beta 19€/mes. Sin permanencia.
+      </p>
+    </div>
+  </section>
+
+  <section id="que-hace" class="bg-light">
+    <div class="wrap">
+      <p class="tag">Qué hace Max</p>
+      <h2>Pides. Max ejecuta.</h2>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <div class="icon c1">📄</div>
+          <h3>Documentos y PDFs</h3>
+          <p>Cartas, informes, contratos, catálogos, propuestas. Le dices qué necesitas y Max lo redacta, formatea y entrega listo.</p>
+        </div>
+        <div class="feat-card">
+          <div class="icon c2">📬</div>
+          <h3>Correos electrónicos</h3>
+          <p>Redacta, responde, organiza tu bandeja. Max gestiona tu correo para que no tengas que hacerlo tú.</p>
+        </div>
+        <div class="feat-card">
+          <div class="icon c3">📦</div>
+          <h3>Stock y productos</h3>
+          <p>Gestiona tu inventario, actualiza precios, controla stock bajo. Max mantiene tu negocio ordenado.</p>
+        </div>
+        <div class="feat-card">
+          <div class="icon c4">💬</div>
+          <h3>Atención al cliente</h3>
+          <p>Responde consultas sobre precios, disponibilidad, horarios. Max atiende por ti, en tu tono y estilo.</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:32px; font-size:1.05rem; color:var(--green); max-width:600px; margin-left:auto; margin-right:auto;">
+        En resumen: le das una tarea, Max la hace y te entrega el resultado. Sin importar el tipo de trabajo, mientras sea una tarea concreta, Max puede con ella.
+      </p>
+    </div>
+  </section>
+
+  <section id="ejemplo">
+    <div class="wrap">
+      <h2>Se usa así</h2>
+      <div class="example-chat">
+        <div class="msg user">
+          <div class="who">TÚ</div>
+          <p>"Max, necesito un PDF con el catálogo de productos actualizado para enviar a un cliente."</p>
+        </div>
+        <div class="msg max">
+          <div class="who">MAX</div>
+          <p>"Dame un momento. Reviso el stock, tomo los precios actualizados y te lo preparo. ¿Quieres que incluya también los nuevos combos?"</p>
+        </div>
+        <div class="msg user">
+          <div class="who">TÚ</div>
+          <p>"Sí, inclúyelos."</p>
+        </div>
+        <div class="msg max">
+          <div class="who">MAX</div>
+          <p>"Listo. Aquí tienes el PDF con el catálogo completo y los combos. ¿Algo más?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="para-quien" class="bg-light">
+    <div class="wrap">
+      <p class="tag">Para quién es Max</p>
+      <h2>Si sabes qué hacer pero no tienes tiempo, Max es para ti.</h2>
+      <div class="target-grid">
+        <div class="feat-card">
+          <h3>Autónomos</h3>
+          <p>Que pierden horas con papeles, correos y consultas repetitivas.</p>
+        </div>
+        <div class="feat-card">
+          <h3>Pequeños negocios</h3>
+          <p>Tiendas, despachos, clínicas que necesitan orden sin contratar a nadie.</p>
+        </div>
+        <div class="feat-card">
+          <h3>Profesionales</h3>
+          <p>Gente que sabe lo que hay que hacer y quiere delegarlo para centrarse en lo que importa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+  <div class="wrap">
+    <p class="tag" style="color:var(--accent);">Empieza hoy</p>
+    <h2>Tienes cosas que hacer.<br>Max se encarga de las tareas.</h2>
+    <p>Le pides y lo hace. Rápido, directo, eficiente.</p>
+    <div style="background:var(--white); display:inline-block; padding:20px 40px; border-radius:60px; margin-top:16px;">
+      <a href="https://chat.palma-agent.com/?guest=1&amp;service=max&amp;origen=max-boton-2" class="btn-link"><img src="/img/max-btn.png" alt="Acceder a Max"></a>
+      <span class="cta-foot" style="color:var(--accent-dark); display:block; text-align:center; margin-top:8px;">
+        Versión Beta 19€/mes. Sin permanencia.
+      </span>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>MAX</strong> &nbsp;·&nbsp; Sabes lo que hay que hacer. Max se encarga.</p>
+      <p style="margin-top:1px;">
+        Max forma parte de <a href="/">Palma Agent</a>.
+        <a href="/aviso-legal">Aviso Legal</a>
+        <a href="/privacidad">Privacidad</a>
+        <a href="/contacto">Contacto</a>
+        <a href="/sobrenosotros">Sobre nosotros</a>
+      </p>
+      <p style="margin-top:8px; font-size:0.75rem; color:#9A9A9A;">&copy; 2026 Palma Agent</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
