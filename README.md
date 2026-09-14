@@ -8,15 +8,15 @@ This is the public website for Palma Agent — a platform of AI assistants for e
 
 ## Pages
 
-- `/` — Home page
-- `/lemuel` — Lemuel (strategic assistant)
-- `/max` — Max (task executor)
-- `/mia` — Mía (marketing assistant)
-- `/landing` — Landing page
-- `/sobrenosotros` — About us
-- `/contacto` — Contact
-- `/privacidad` — Privacy policy
-- `/aviso-legal` — Legal notice
+- / — Home page
+- /lemuel — Lemuel (strategic assistant)
+- /max — Max (task executor)
+- /mia — MIA (marketing assistant)
+- /landing — Landing page
+- /sobrenosotros — About us
+- /contacto — Contact
+- /privacidad — Privacy policy
+- /aviso-legal — Legal notice
 
 ## Stack
 
@@ -24,10 +24,8 @@ Pure HTML/CSS/JS. No frameworks, no build step.
 
 ## Deploy
 
-Served by [Caddy](https://caddyserver.com/) on Hetzner VPS (178.104.253.189).
+Served by Caddy on European VPS.
 
 ## Contact
 
-Fernando Presello
-agenciapalmaagent@gmail.com
-https://palma-agent.com
+palma-agent.com
