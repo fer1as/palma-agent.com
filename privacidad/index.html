@@ -10,15 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-    body { background:#ffffff; color:#4A5568; font-family:'Lato',sans-serif; line-height:1.7; padding:40px 20px; min-height:100vh; display:flex; flex-direction:column; }
-    .wrap { max-width:780px; margin:0 auto; flex:1; }
+    body { background:#ffffff; color:#4A5568; font-family:'Lato',sans-serif; line-height:1.7; padding:0 20px; min-height:100vh; display:flex; flex-direction:column; }
+    .navbar { display:flex; align-items:center; justify-content:space-between; padding:16px 0; max-width:780px; margin:0 auto; width:100%; border-bottom:1px solid #e2e8f0; }
+    .navbar-brand { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .navbar-brand img { height:36px; width:auto; }
+    .navbar-brand span { font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem; color:#1a1a2e; }
+    .navbar-brand span em { color:#c8a96e; font-style:normal; }
+    .navbar-links { display:flex; gap:20px; }
+    .navbar-links a { font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:600; color:#8893A8; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px; }
+    .navbar-links a:hover { color:#1a1a2e; }
+    .wrap { max-width:780px; margin:0 auto; flex:1; padding-top:32px; }
     h1 { font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:700; margin-bottom:8px; color:#1a1a2e; }
     h2 { font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:600; margin-top:28px; margin-bottom:8px; color:#c8a96e; }
     p, li { font-size:0.9rem; color:#4A5568; margin-bottom:10px; }
     ul { padding-left:20px; margin-bottom:16px; }
     li { margin-bottom:6px; }
-    .logo { text-align:center; margin-bottom:32px; }
-    .logo img { height:44px; width:auto; }
     .tag { display:inline-block; font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:#c8a96e; margin-bottom:4px; }
     .back { display:inline-block; margin-top:40px; padding:10px 24px; background:#1a1a2e; color:#fff; border-radius:100px; text-decoration:none; font-family:'Montserrat',sans-serif; font-weight:600; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.8px; }
     .back:hover { opacity:0.92; }
@@ -27,17 +33,28 @@
     footer p { font-size:0.75rem; color:#8893A8; }
     footer a { color:#8893A8; text-decoration:none; margin:0 6px; }
     footer a:hover { color:#1a1a2e; }
+    a { color:#c8a96e; text-decoration:none; }
+    a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
+<nav class="navbar">
+  <a href="/" class="navbar-brand">
+    <img src="https://assets.cdn.filesafe.space/drIHRWcFcdVpb6jf2bY8/media/6957adaa035c3af46f494d2d.png" alt="Palma Agent">
+    <span>PALMA <em>AGENT</em></span>
+  </a>
+  <div class="navbar-links">
+    <a href="/sobrenosotros">Quiénes somos</a>
+    <a href="/contacto">Contacto</a>
+  </div>
+</nav>
 <div class="wrap">
-  <div class="logo"><a href="/"><img src="https://assets.cdn.filesafe.space/drIHRWcFcdVpb6jf2bY8/media/6957adaa035c3af46f494d2d.png" alt="Palma Agent"></a></div>
   <p class="tag">Privacidad</p>
   <h1>Política de Privacidad</h1>
 
   <h2>Responsable del tratamiento</h2>
   <p><strong>Responsable del tratamiento:</strong> Palma Agent<br>
-  <strong>Email:</strong> contacto@palma-agent.com</p>
+  <strong>Contacto:</strong> <a href="/contacto">Formulario de contacto</a></p>
 
   <h2>Datos personales que recogemos</h2>
   <p>Recogemos los siguientes datos personales de los usuarios:</p>
@@ -75,7 +92,7 @@
   <p>Al utilizar proveedores de IA ubicados fuera de la Unión Europea, se realizan transferencias internacionales de datos amparadas por las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
 
   <h2>Derechos del usuario</h2>
-  <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <strong>contacto@palma-agent.com</strong>. También puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).</p>
+  <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición a través de nuestro <a href="/contacto">formulario de contacto</a>. También puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).</p>
 
   <h2>Uso de inteligencia artificial</h2>
   <p>Los asistentes digitales de Palma Agent utilizan modelos de inteligencia artificial. Las conversaciones se procesan para generar respuestas. No se toman decisiones automatizadas con efectos jurídicos sobre el usuario sin intervención humana.</p>
@@ -95,4 +112,3 @@
 </footer>
 </body>
 </html>
-
