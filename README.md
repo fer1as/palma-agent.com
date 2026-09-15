@@ -1,1 +1,128 @@
-IyBXaHkgd2UgYnVpbGQKClRlY2hub2xvZ3kgc2hvdWxkIGhlbHAgcGVvcGxlIG1vdmUgZm9yd2FyZC4KClRoZXJlIGFyZSBwZW9wbGUgd2l0aCBpZGVhcyB0aGV5IGNhcmUgYWJvdXQuCgpFbnRyZXByZW5ldXJzIHdobyB3YW50IHRvIGJ1aWxkIHNvbWV0aGluZyBvZiB0aGVpciBvd24uIEFydGlzdHMgd2hvIHdhbnQgdG8gYnJpbmcgYSBwcm9qZWN0IGludG8gdGhlIHdvcmxkLiBJbmRlcGVuZGVudCBjcmVhdG9ycyB3aG8gaGF2ZSBzb21ldGhpbmcgdG8gc2F5IG9yIG1ha2UuCgpUaGV5IG9mdGVuIGhhdmUgdGhlIGRlc2lyZSwgdGhlIGNyZWF0aXZpdHksIGFuZCBtdWNoIG9mIHRoZSBrbm93bGVkZ2UgdGhleSBuZWVkLgoKQnV0IG1vdmluZyBmcm9tIGFuIGlkZWEgdG8gYSBjb25jcmV0ZSByZXN1bHQgY2FuIGJlIGRpZmZpY3VsdC4KClNvbWV0aW1lcyB0aGUgb2JzdGFjbGUgaXMgdGVjaG5pY2FsIGtub3dsZWRnZS4KClNvbWV0aW1lcyBpdCBpcyB0aW1lLCBtb25leSwgdW5jZXJ0YWludHksIG9yIHNpbXBseSBoYXZpbmcgbm8gb25lIHRvIGhlbHAgdGhpbmsgdGhpbmdzIHRocm91Z2guCgpXZSBiZWxpZXZlIHRlY2hub2xvZ3kgY2FuIGRvIG1vcmUgdGhhbiBhdXRvbWF0ZSB0YXNrcy4KCkl0IGNhbiBoZWxwIHBlb3BsZSBhY2Nlc3Mga25vd2xlZGdlLCBkZXZlbG9wIGlkZWFzLCBtYWtlIGRlY2lzaW9ucywgYW5kIHR1cm4gaW50ZW50aW9ucyBpbnRvIHNvbWV0aGluZyByZWFsLgoKVGhhdCBpcyB0aGUgcG9zc2liaWxpdHkgd2UgYXJlIGV4cGxvcmluZyB3aXRoIFBhbG1hIEFnZW50LgoKLS0tCgojIyBUaGUgcGVyc29uIGNvbWVzIGZpcnN0CgpQYWxtYSBBZ2VudCBpcyBhIHBsYXRmb3JtIG9mIEFJIGFzc2lzdGFudHMgZGVzaWduZWQgdG8gaGVscCBwZW9wbGUgdGhpbmssIGNyZWF0ZSwgYW5kIGFjdC4KCk91ciBmaXJzdCBwcm9kdWN0cyBhcmUgTGVtdWVsLCBNYXgsIGFuZCBNaWEuCgpUaGV5IGV4cGxvcmUgZGlmZmVyZW50IHdheXMgb2Ygd29ya2luZyB3aXRoIGFydGlmaWNpYWwgaW50ZWxsaWdlbmNlOgoKKipMZW11ZWwqKiBoZWxwcyBkZXZlbG9wIGlkZWFzLCBleHBsb3JlIHBvc3NpYmlsaXRpZXMsIG1ha2UgZGVjaXNpb25zLCBhbmQgbW92ZSBmcm9tIHRoaW5raW5nIHRvIGRvaW5nLgoKKipNYXgqKiBoZWxwcyBleGVjdXRlIHByYWN0aWNhbCB0YXNrcyBhbmQgcmVkdWNlIHRoZSBmcmljdGlvbiBvZiBldmVyeWRheSB3b3JrLgoKKipNaWEqKiBleHBsb3JlcyBob3cgQUkgY2FuIGhlbHAgcGVvcGxlIG1hbmFnZSB0aGVpciBkaWdpdGFsIHByZXNlbmNlIGFuZCBjb21tdW5pY2F0aW9uLgoKVGhleSBhcmUgZGlmZmVyZW50IHByb2R1Y3RzLCBidXQgdGhleSBzaGFyZSBhIHByaW5jaXBsZToKCipBSSBpcyB0aGUgdG9vbC4gVGhlIHBlcnNvbiBpcyB0aGUgcmVhc29uLioKCldlIGRvIG5vdCB3YW50IHRvIHJlcGxhY2UgcGVvcGxlJ3MgY3JlYXRpdml0eSwganVkZ21lbnQsIG9yIHJlc3BvbnNpYmlsaXR5LgoKV2Ugd2FudCB0byBoZWxwIHRoZW0gdXNlIHRoZWlyIG93biBjYXBhYmlsaXRpZXMgbW9yZSBlZmZlY3RpdmVseS4KCi0tLQoKIyMgV2h5IHdlIGFyZSBidWlsZGluZyB0aGlzCgpQYWxtYSBBZ2VudCBncmV3IG91dCBvZiBhIGh1bWFuIHF1ZXN0aW9uIGJlZm9yZSBpdCBiZWNhbWUgYSB0ZWNobm9sb2dpY2FsIHByb2plY3Q6CgoqV2hhdCBpZiBpbnRlbGxpZ2VudCBhc3Npc3RhbmNlIGNvdWxkIGhlbHAgbW9yZSBwZW9wbGUgYnJpbmcgbWVhbmluZ2Z1bCBpZGVhcyBpbnRvIHRoZSB3b3JsZD8qCgpUaGUgZW1lcmdlbmNlIG9mIEFJIG9wZW5lZCBhIHBvc3NpYmlsaXR5IHRoYXQgd2Ugd2FudGVkIHRvIGV4cGxvcmUuCgpOb3QganVzdCBhIGNoYXRib3QgdGhhdCBhbnN3ZXJzIHF1ZXN0aW9ucy4KCk5vdCBqdXN0IGFuIGF1dG9tYXRpb24gc3lzdGVtIHRoYXQgcGVyZm9ybXMgdGFza3MuCgpCdXQgYSBwcmFjdGljYWwgZm9ybSBvZiBzdXBwb3J0IHRoYXQgY2FuIGhlbHAgYSBwZXJzb24gdW5kZXJzdGFuZCBzb21ldGhpbmcsIGRldmVsb3AgaXQsIGFuZCB0YWtlIHRoZSBuZXh0IHN0ZXAuCgpXZSBhcmUgc3RpbGwgbGVhcm5pbmcgd2hhdCB0aGlzIGNhbiBiZWNvbWUuCgpXZSBhcmUgdGVzdGluZyB0aGUgcHJvZHVjdHMgd2l0aCByZWFsIHVzZXJzLgoKV2UgYXJlIGltcHJvdmluZyB0aGUgaW5mcmFzdHJ1Y3R1cmUuCgpXZSBhcmUgZGlzY292ZXJpbmcgd2hhdCB3b3Jrcywgd2hhdCBkb2VzIG5vdCwgYW5kIHdoYXQgcGVvcGxlIGFjdHVhbGx5IG5lZWQuCgpUaGlzIGlzIG5vdCBhIGZpbmlzaGVkIHZpc2lvbi4KCkl0IGlzIGFuIG9uZ29pbmcgZXhwZXJpbWVudC4KCi0tLQoKIyMgT3VyIGJldGEgcGhhc2UKCldlIGFyZSBjdXJyZW50bHkgcHJlcGFyaW5nIGEgYmV0YSB0ZXN0aW5nIHBoYXNlIGZvciBMZW11ZWwsIE1heCwgYW5kIE1pYS4KCkJldGEgdGVzdGVycyB3aWxsIHJlY2VpdmUgYWNjZXNzIHRvIHRoZSBhc3Npc3RhbnRzIGZvciDigqwxNy9tb250aC4KClRoZWlyIHBhcnRpY2lwYXRpb24gd2lsbCBoZWxwIHVzOgoKVGVzdCB0aGUgYXNzaXN0YW50cyBpbiByZWFsLXdvcmxkIHNpdHVhdGlvbnMuClVuZGVyc3RhbmQgd2hhdCBwZW9wbGUgYWN0dWFsbHkgbmVlZCBmcm9tIHRoZW0uCkRpc2NvdmVyIGxpbWl0YXRpb25zIGFuZCBpbXByb3ZlIHRoZSBwcm9kdWN0cy4KVmFsaWRhdGUgd2hldGhlciB0aGlzIG1vZGVsIGNhbiBiZWNvbWUgYSBzdXN0YWluYWJsZSBidXNpbmVzcy4KClRoZSBpbmNvbWUgZnJvbSB0aGlzIHBoYXNlIHdpbGwgYmUgdXNlZCBmb3Igb3BlcmF0aW9uYWwgY29zdHMgc3VjaCBhcyBzZXJ2ZXJzLCBBUElzLCBkb21haW5zLCBhbmQgdGhlIHRvb2xzIHJlcXVpcmVkIHRvIHJ1biB0aGUgcGxhdGZvcm0uCgpUaGUgcHJvamVjdCBpcyBjdXJyZW50bHkgYmVpbmcgZGV2ZWxvcGVkIGluZGVwZW5kZW50bHksIHdpdGggdGhlIGludGVudGlvbiBvZiBmb3JtYWxpemluZyBpdCBhcyBhIGNvbXBhbnkgaWYgdGhlIHZhbGlkYXRpb24gaXMgc3VjY2Vzc2Z1bC4KCi0tLQoKIyMgVGhlIGxlZ2FjeSB3ZSBob3BlIHRvIGxlYXZlCgpXZSBkbyBub3Qga25vdyB5ZXQgaG93IGZhciBQYWxtYSBBZ2VudCBjYW4gZ28uCgpXZSBhcmUgbm90IGNsYWltaW5nIHRvIGhhdmUgc29sdmVkIGEgbWFqb3IgcHJvYmxlbS4KCldlIGFyZSBzaW1wbHkgdHJ5aW5nIHRvIGJ1aWxkIHNvbWV0aGluZyB0aGF0IG1hdHRlcnMuCgpJZiB0aGlzIHByb2plY3QgbGVhdmVzIGEgbGVnYWN5LCB3ZSBob3BlIGl0IHdpbGwgYmUgdGhpczoKClRoYXQgYSBwZXJzb24gd2l0aCBhIG1lYW5pbmdmdWwgaWRlYSBkb2VzIG5vdCBoYXZlIHRvIGFiYW5kb24gaXQgc2ltcGx5IGJlY2F1c2UgdGhleSBsYWNrIHRoZSB0ZWNobmljYWwga25vd2xlZGdlLCByZXNvdXJjZXMsIG9yIHN1cHBvcnQgdG8gYnJpbmcgaXQgdG8gbGlmZS4KClRoYXQgaW50ZWxsaWdlbnQgdGVjaG5vbG9neSBiZWNvbWVzIG1vcmUgYWNjZXNzaWJsZSB0byBwZW9wbGUgd2hvIHdhbnQgdG8gY3JlYXRlLCBub3Qgb25seSB0byB0aG9zZSB3aG8gYWxyZWFkeSBoYXZlIHRoZSBtZWFucyB0byBkbyBzby4KClRoYXQgQUkgY2FuIGJlIGV4cGVyaWVuY2VkIG5vdCBvbmx5IGFzIGEgbWFjaGluZSB0aGF0IHByb2R1Y2VzIGFuc3dlcnMsIGJ1dCBhcyBhIHByYWN0aWNhbCBjb21wYW5pb24gaW4gdGhlIGRpZmZpY3VsdCBtb3ZlbWVudCBmcm9tIHRoaW5raW5nIHRvIGRvaW5nLgoKQSBsaXR0bGUgbW9yZSBjbGFyaXR5LgpBIGxpdHRsZSBtb3JlIGNvdXJhZ2UuCkEgbGl0dGxlIG1vcmUgYWJpbGl0eSB0byB0dXJuIGlkZWFzIGludG8gc29tZXRoaW5nIHJlYWwuCgoqVGhhdCBpcyB3aGF0IHdlIGFyZSBidWlsZGluZy4qCgotLS0KCiMjIE9wZW4gc291cmNlIGFuZCB0cmFuc3BhcmVuY3kKClBhbG1hIEFnZW50IGlzIGJ1aWx0IHVzaW5nIG9wZW4tc291cmNlIGZyYW1ld29ya3MgYW5kIHRvb2xzLgoKV2UgYmVsaWV2ZSBpbiBiZW5lZml0aW5nIGZyb20gdGhlIHdvcmsgb2Ygb3Blbi1zb3VyY2UgY29tbXVuaXRpZXMsIHJlc3BlY3RpbmcgdGhlaXIgbGljZW5zZXMsIGFuZCBjb250cmlidXRpbmcgYmFjayB3aGVyZSB3ZSBjYW4uCgpEdXJpbmcgdGhlIGJldGEgcGhhc2UsIHdlIGFsc28gaW50ZW5kIHRvIG1haW50YWluIHRyYW5zcGFyZW50IGZpbmFuY2lhbCByZWNvcmRzIHRocm91Z2ggb3VyIGZpc2NhbCBob3N0aW5nIGFycmFuZ2VtZW50LCBzdWJqZWN0IHRvIHRoZSBwb2xpY2llcyBvZiB0aGUgaG9zdCB3ZSB3b3JrIHdpdGguCgpXZSB3YW50IHRoZSBwcm9qZWN0IHRvIGdyb3cgcmVzcG9uc2libHksIHdpdGggYSBjbGVhciB1bmRlcnN0YW5kaW5nIG9mIHdoZXJlIGl0cyByZXNvdXJjZXMgY29tZSBmcm9tIGFuZCBob3cgdGhleSBhcmUgdXNlZC4=
+# Why we build
+
+Technology should help people move forward.
+
+There are people with ideas they care about.
+
+Entrepreneurs who want to build something of their own. Artists who want to bring a project into the world. Independent creators who have something to say or make.
+
+They often have the desire, the creativity, and much of the knowledge they need.
+
+But moving from an idea to a concrete result can be difficult.
+
+Sometimes the obstacle is technical knowledge.
+
+Sometimes it is time, money, uncertainty, or simply having no one to help think things through.
+
+We believe technology can do more than automate tasks.
+
+It can help people access knowledge, develop ideas, make decisions, and turn intentions into something real.
+
+That is the possibility we are exploring with Palma Agent.
+
+---
+
+## The person comes first
+
+Palma Agent is a platform of AI assistants designed to help people think, create, and act.
+
+Our first products are Lemuel, Max, and Mia.
+
+They explore different ways of working with artificial intelligence:
+
+**Lemuel** helps develop ideas, explore possibilities, make decisions, and move from thinking to doing.
+
+**Max** helps execute practical tasks and reduce the friction of everyday work.
+
+**Mia** explores how AI can help people manage their digital presence and communication.
+
+They are different products, but they share a principle:
+
+*AI is the tool. The person is the reason.*
+
+We do not want to replace people's creativity, judgment, or responsibility.
+
+We want to help them use their own capabilities more effectively.
+
+---
+
+## Why we are building this
+
+Palma Agent grew out of a human question before it became a technological project:
+
+*What if intelligent assistance could help more people bring meaningful ideas into the world?*
+
+The emergence of AI opened a possibility that we wanted to explore.
+
+Not just a chatbot that answers questions.
+
+Not just an automation system that performs tasks.
+
+But a practical form of support that can help a person understand something, develop it, and take the next step.
+
+We are still learning what this can become.
+
+We are testing the products with real users.
+
+We are improving the infrastructure.
+
+We are discovering what works, what does not, and what people actually need.
+
+This is not a finished vision.
+
+It is an ongoing experiment.
+
+---
+
+## Our beta phase
+
+We are currently preparing a beta testing phase for Lemuel, Max, and Mia.
+
+Beta testers will receive access to the assistants for €17/month.
+
+Their participation will help us:
+
+Test the assistants in real-world situations.
+Understand what people actually need from them.
+Discover limitations and improve the products.
+Validate whether this model can become a sustainable business.
+
+The income from this phase will be used for operational costs such as servers, APIs, domains, and the tools required to run the platform.
+
+The project is currently being developed independently, with the intention of formalizing it as a company if the validation is successful.
+
+---
+
+## The legacy we hope to leave
+
+We do not know yet how far Palma Agent can go.
+
+We are not claiming to have solved a major problem.
+
+We are simply trying to build something that matters.
+
+If this project leaves a legacy, we hope it will be this:
+
+That a person with a meaningful idea does not have to abandon it simply because they lack the technical knowledge, resources, or support to bring it to life.
+
+That intelligent technology becomes more accessible to people who want to create, not only to those who already have the means to do so.
+
+That AI can be experienced not only as a machine that produces answers, but as a practical companion in the difficult movement from thinking to doing.
+
+A little more clarity.
+A little more courage.
+A little more ability to turn ideas into something real.
+
+*That is what we are building.*
+
+---
+
+## Open source and transparency
+
+Palma Agent is built using open-source frameworks and tools.
+
+We believe in benefiting from the work of open-source communities, respecting their licenses, and contributing back where we can.
+
+During the beta phase, we also intend to maintain transparent financial records through our fiscal hosting arrangement, subject to the policies of the host we work with.
+
+We want the project to grow responsibly, with a clear understanding of where its resources come from and how they are used.
